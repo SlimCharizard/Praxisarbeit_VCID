@@ -1,0 +1,26 @@
+<!--applikation/app/templates/hello_user.html-->
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+        <title> Francesco</title>
+        {% else %} 
+        <title> Welcome to Francesco</title>
+        {% endif %} 
+    </head>
+    <body bgcolor="Lightskyblue"> 
+        <div>
+            Welcome to Francesco:
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Registrieren</a>
+            <a href="{{ url_for('contact') }}">Kontakt</a>
+        </div>
+        <div> <a href="/index"></a></div>
+        <hr>
+        {% block content %}{% endblock %} 
+        <p><h4>Wenn Sie bereits über einen Account verfügen, können Sie sich unter "Login" einloggen</h4></p>
+        <p><h4>Wenn Sie neu hier sind, legen Sie bitte zuerst unter "Registrieren" einen neuen account</h4></p>
+        <p><h4>an, um alle Funktionen verwenden zu können</h4></p>
+    </body>
+</html>

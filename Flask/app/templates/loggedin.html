@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A simple HTML document</title>
+</head>
+<body bgcolor="Lightskyblue"> 
+  <div>
+    Hier können Sie sich wieder abmelden:
+    <a href="{{ url_for('index') }}">Logout</a>
+</div>
+    <p><h4>Sie haben sich erfolgreich angemeldet!</h4><p>
+<!--Card content-->
+<div class="card-body text-center">
+    <!--Category & Title-->
+    <a href="" class="grey-text">
+      <h3>Test-Artikel</h3>
+    </a>
+    <h5>
+      <strong>
+        <a href="" class="dark-grey-text">Ich bin ein Testartikel
+          <span class="badge badge-pill danger-color">NEW</span>
+        </a>
+      </strong>
+    </h5>
+
+    <h4 class="font-weight-bold blue-text">
+      <strong>120 CHF</strong>
+    </h4>
+
+  </div>
+  <!--Card content-->
+  <p><h4>Hier können Sie einen neuen Artikel erfassen:</h4></p> 
+  <form> 
+    <label> Titel des Artikels </label>         
+    <input type="text" name="Titel" size="15"/> <br> <br> 
+    Artikelbeschreibung:
+    <br>  
+    <textarea cols="80" rows="5" value="address">  
+    </textarea>  
+    <br> <br>
+    <label> Preis in CHF </label>         
+    <input type="text" name="price" size="15"/> <br> <br> 
+    <input type="button" value="Veröffentlichen"/> 
+  </form>  
+</body>
+</html>

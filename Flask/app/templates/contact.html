@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title> Kontakt / über uns</title>
+        {% else %} 
+        <title> Kontaktseite</title>
+        {% endif %} 
+    </head>
+    <body bgcolor="Lightskyblue"> 
+        <div>
+            Welcome to Francesco:
+            <a href="{{ url_for('index') }}">Zur Startseite zurückkehren</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Registrieren</a>
+        </div>
+        <p><h1>Sie haben Fragen? Kein Problem! Kontaktieren sie uns unter:</h1></p>
+        <p><h3>info@francesco.intern oder +41 44 765 43 21</h3></p>
+        
+        <p><h3>Feedback (negativ oder Positiv) bitte ausschliesslich an quality_mgmt@francesco.intern</h3></p>
+    </body>
+</html>
